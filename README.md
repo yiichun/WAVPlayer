@@ -12,7 +12,7 @@ WAV Player (音效播放器)
 
 防呆機制：
 
-路徑檢查：若未選取檔案或檔案不存在時按下播放按鈕，系統會彈出警告視窗，避免程式當機。
+路徑檢查：若未選取檔案或檔案不存在時，不能按下播放一次和重複撥放的按鈕。
 
 資源管理：在關閉程式前會彈出確認視窗，並確保播放器資源被正確釋放。
 
@@ -27,3 +27,7 @@ WAV Player (音效播放器)
 關閉檔案時
 
 <img width="1134" height="563" alt="image" src="https://github.com/user-attachments/assets/241ee84a-9a16-4679-9205-b7e293158d7e" />
+
+防呆機制，在未選取檔案或檔案不存在時按下停止播放，會跳出警告視窗。
+
+<img width="1126" height="574" alt="螢幕擷取畫面 2026-05-02 215636" src="https://github.com/user-attachments/assets/7590b010-73db-42e7-ba82-f6e358a16a4a" />
