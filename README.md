@@ -20,18 +20,19 @@ WAV Player (音效播放器)
 
 資源管理：在關閉程式前會彈出確認視窗，並確保播放器資源被正確釋放。
 
-一開始的執行畫面
+一開始的執行畫面：程式初始化狀態，播放與循環按鈕預設為停用（Enabled = false），確保使用者必須先載入檔案。
 
 <img width="1298" height="703" alt="image" src="https://github.com/user-attachments/assets/42210807-4688-4095-ab24-fe1d3bd216a9" />
 
-加入wav檔案之後
+加入wav檔案之後：載入檔案後，透過解析標頭即時顯示總時長，並開啟播放功能。
 
 <img width="1299" height="698" alt="image" src="https://github.com/user-attachments/assets/7e7d1d7b-18dd-4ad1-9e5c-10398b4fc01c" />
 
-關閉檔案時
+關閉檔案時：實作 FormClosing 事件，透過彈出視窗確保使用者意圖並正確釋放資源。
 
 <img width="1321" height="701" alt="image" src="https://github.com/user-attachments/assets/27b56e50-7bd8-4898-9e05-f335152557e6" />
 
-防呆機制，在未選取檔案或檔案不存在時按下停止播放，會跳出警告視窗。
+防呆機制，當系統偵測到未載入音訊流時按下停止，會觸發異常處理邏輯並跳出警告提示。
 
-<img width="1126" height="574" alt="螢幕擷取畫面 2026-05-02 215636" src="https://github.com/user-attachments/assets/7590b010-73db-42e7-ba82-f6e358a16a4a" />
+<img width="1295" height="711" alt="image" src="https://github.com/user-attachments/assets/15569578-f4c1-449d-8dab-5bb27c2dab25" />
+
